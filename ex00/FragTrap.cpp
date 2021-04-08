@@ -12,7 +12,7 @@ std::string FragTrap::quotes[5] =
 
 FragTrap::FragTrap(std::string const &name):name(name)
 {
-	std::cout << "Hey, best friend! Constructing for you!" << std::endl;
+	std::cout << "Hey, best friend! Constructing myself for you!" << std::endl;
 	hitPoints = 100;
 	maxHitPoints = 100;
 	energyPoints = 100;
@@ -49,12 +49,12 @@ FragTrap &FragTrap::operator=(FragTrap const &other)
 
 void FragTrap::rangedAttack(std::string const &target)
 {
-	std::cout << "FR4G-TP" << this->name << "attacks" << target << "at range, causing" << this->rangedAttackDamage << "points of damage!" << std::endl;
+	std::cout << "FR4G-TP " << this->name << " attacks " << target << " at range, causing " << this->rangedAttackDamage << " points of damage!" << std::endl;
 }
 
 void FragTrap::meleeAttack(std::string const &target)
 {
-	std::cout << "FR4G-TP" << this->name << "attacks" << target << "at melee, causing" << this->meleeAttackDamage << "points of damage!" << std::endl;
+	std::cout << "FR4G-TP " << this->name << " attacks " << target << " at melee, causing " << this->meleeAttackDamage << " points of damage!" << std::endl;
 }
 
 void FragTrap::takeDamage(unsigned int amount)
@@ -68,7 +68,7 @@ void FragTrap::takeDamage(unsigned int amount)
 		actualDamage += this->hitPoints;
 		this->hitPoints = 0;
 	}
-	std::cout << "FR4G-TP" << this->name << "takes" << actualDamage << "points of damage!" << std::endl;
+	std::cout << "FR4G-TP " << this->name << " takes " << actualDamage << " points of damage!" << std::endl;
 }
 
 void FragTrap::beRepaired(unsigned int amount)
@@ -79,18 +79,18 @@ void FragTrap::beRepaired(unsigned int amount)
 		amount -= (this->hitPoints - this->maxHitPoints);
 		this->hitPoints = this->maxHitPoints;
 	}
-	std::cout << "FR4G-TP" << this->name << "is repaired" << amount << "points!" << std::endl;
+	std::cout << "FR4G-TP " << this->name << " is repaired " << amount << " points!" << std::endl;
 }
 
 void FragTrap::vaulthunter_dot_exe(std::string const &target)
 {
 	if (this->energyPoints < 25)
 	{
-		std::cout << "FR4G-TP" << this->name << "is out of energy..." << std::endl;
+		std::cout << "FR4G-TP " << this->name << " is out of energy..." << std::endl;
 	}
 	else
 	{
 		this->energyPoints -= 25;
-		std::cout << "FR4G-TP" << this->name << "attacks" << target << "saying \"" << FragTrap::quotes[std::rand() % 5] << "\" causing" << std::rand() % 100 << "points of damage!" << std::endl;
+		std::cout << "FR4G-TP " << this->name << " attacks " << target << " saying \"" << FragTrap::quotes[std::rand() % 5] << "\" causing " << std::rand() % 100 << " points of damage!" << std::endl;
 	}
 }
