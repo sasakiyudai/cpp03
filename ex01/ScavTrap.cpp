@@ -84,5 +84,5 @@ void ScavTrap::beRepaired(unsigned int amount)
 
 void ScavTrap::challengeNewcomer()
 {
-	std::cout << "CL4P-TP " << ScavTrap::quotes[rand() % 5] << std::endl;
+	std::cout << "CL4P-TP " << this->name << " says \"" << ScavTrap::quotes[rand() % 5] << "\"" << std::endl;
 }
