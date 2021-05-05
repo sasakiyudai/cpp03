@@ -1,7 +1,7 @@
 #include "SuperTrap.hpp"
 #include <iostream>
 
-SuperTrap::SuperTrap(std::string const &name):ClapTrap(name),NinjaTrap(name),FragTrap(name)
+SuperTrap::SuperTrap(std::string const &name):ClapTrap(name),FragTrap(name),NinjaTrap(name)
 {
 	std::cout << "Super Constructing!" << std::endl;
 	hitPoints = FragTrap::hitPoints;
@@ -13,7 +13,7 @@ SuperTrap::SuperTrap(std::string const &name):ClapTrap(name),NinjaTrap(name),Fra
 	armorDamageReduction = FragTrap::armorDamageReduction;
 }
 
-SuperTrap::SuperTrap(SuperTrap const &other):ClapTrap(name),NinjaTrap(other.name),FragTrap(other.name)
+SuperTrap::SuperTrap(SuperTrap const &other):ClapTrap(name),FragTrap(other.name),NinjaTrap(other.name)
 {
 	std::cout << "Super Constructing!" << std::endl;
 	*this = other;
