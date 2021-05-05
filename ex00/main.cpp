@@ -27,5 +27,8 @@ int main()
 	hikakin.vaulthunter_dot_exe("seikin");
 	hikakin.takeDamage(10);
 
+	hikakin.vaulthunter_dot_exe("seikin");
+	hikakin.vaulthunter_dot_exe("seikin");
+	
 	return (0);
 }
