@@ -10,6 +10,11 @@ std::string ScavTrap::quotes[5] =
 	"Hey! You're TALKING to me! And I didn't even have an exclamation point over my head! This is the BEST day of my life!"
 };
 
+ScavTrap::ScavTrap():ClapTrap()
+{
+
+}
+
 ScavTrap::ScavTrap(std::string const &name):ClapTrap(name)
 {
 	std::cout << "Wooooooooooooooo! Constructing myself only for myself!" << std::endl;

@@ -1,6 +1,11 @@
 #include "SuperTrap.hpp"
 #include <iostream>
 
+SuperTrap::SuperTrap():ClapTrap(),FragTrap(),NinjaTrap()
+{
+	
+}
+
 SuperTrap::SuperTrap(std::string const &name):ClapTrap(name),FragTrap(name),NinjaTrap(name)
 {
 	std::cout << "Super Constructing!" << std::endl;

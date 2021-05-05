@@ -5,6 +5,8 @@
 
 class ScavTrap
 {
+	private:
+		ScavTrap();
 	public:
 		ScavTrap(std::string const &name);
 		ScavTrap(ScavTrap const &other);

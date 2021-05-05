@@ -10,6 +10,11 @@ std::string FragTrap::quotes[5] =
 	"Gosh. This party is worse than stairs."
 };
 
+FragTrap::FragTrap():ClapTrap()
+{
+
+}
+
 FragTrap::FragTrap(std::string const &name):ClapTrap(name)
 {
 	std::cout << "Hey, best friend! Constructing myself for you!" << std::endl;

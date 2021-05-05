@@ -2,6 +2,11 @@
 
 #include <iostream>
 
+ClapTrap::ClapTrap()
+{
+
+}
+
 ClapTrap::ClapTrap(std::string const &name):name(name)
 {
 	std::cout << "Construction in ClapTrap" << std::endl;

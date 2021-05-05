@@ -6,6 +6,8 @@
 
 class FragTrap: virtual public ClapTrap
 {
+	protected:
+		FragTrap();
 	public:
 		FragTrap(std::string const &name);
 		FragTrap(FragTrap const &other);

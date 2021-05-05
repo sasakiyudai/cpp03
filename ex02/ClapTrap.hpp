@@ -5,6 +5,8 @@
 
 class ClapTrap
 {
+	protected:
+		ClapTrap();
 	public:
 		ClapTrap(std::string const &name);
 		ClapTrap(ClapTrap const &other);

@@ -1,6 +1,11 @@
 #include "NinjaTrap.hpp"
 #include <iostream>
 
+NinjaTrap::NinjaTrap():ClapTrap()
+{
+	
+}
+
 NinjaTrap::NinjaTrap(std::string const &name):ClapTrap(name)
 {
 	std::cout << "just constructing Ninja!" << std::endl;hitPoints = 100;

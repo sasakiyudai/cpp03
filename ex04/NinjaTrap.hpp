@@ -9,6 +9,8 @@
 
 class NinjaTrap: virtual public ClapTrap
 {
+	protected:
+		NinjaTrap();
 	public:
 		NinjaTrap(std::string const &name);
 		NinjaTrap(NinjaTrap const &other);

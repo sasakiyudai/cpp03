@@ -9,6 +9,8 @@
 
 class NinjaTrap: public ClapTrap
 {
+	private:
+		NinjaTrap();
 	public:
 		NinjaTrap(std::string const &name);
 		NinjaTrap(NinjaTrap const &other);
